@@ -4,5 +4,13 @@
 
     $diferencaHoras = $dataHoraFinal - $dataHoraInicial;
     $horasTrabalhadas = round($diferencaHoras / 3600, 2);
+
+    if ($horasTrabalhadas >= 24) {
+        echo "<p style='color: red;'>Erro: A diferença de horas deve ser inferior a 24.</p>";
+    } else {
+        $horasDiurnas = 0;
+        $horasNoturnas = 0;
+        $horaAtual = $dataHoraInicial;
+    }
     
 ?>
