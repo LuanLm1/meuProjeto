@@ -14,6 +14,11 @@
         $horaInicial = $_POST["hora_inicial"];
         $dataFinal = $_POST["data_final"];
         $horaFinal = $_POST["hora_final"];
+       
+        $dataHoraInicial = $dataInicial . " " . $horaInicial;
+        
+        $dataHoraFinal = $dataFinal . " " . $horaFinal;
+
     }
 ?>
 </body>
