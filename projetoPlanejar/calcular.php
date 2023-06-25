@@ -11,6 +11,16 @@
         $horasDiurnas = 0;
         $horasNoturnas = 0;
         $horaAtual = $dataHoraInicial;
+
+        while ($horaAtual < $dataHoraFinal) {
+            if (date("H:i", $horaAtual) >= "05:00" && date("H:i", $horaAtual) < "22:00") {
+            $horasDiurnas++;
+            } else {
+            $horasNoturnas++;
+            }
+
+            $horaAtual++;
     }
+}
     
 ?>
