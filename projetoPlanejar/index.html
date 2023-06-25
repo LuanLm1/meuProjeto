@@ -10,19 +10,20 @@
     <h1>Cálculo de Horas Diurnas e Noturnas</h1>
     <h2>Informe a data e a hora trabalhada:</h2>
 
-    <form method="POST" action="<?php echo $_SERVER[" PHP_SELF"]; ?>">
-        <label for="data_inicial">Data Inicial:</label>
-        <input type="date" name="data_inicial" required>
-        <label for="hora_inicial">Hora Inicial:</label>
-        <input type="time" name="hora_inicial" required>
+    <form method="POST" action="calcular.php">
+        <label for="data_hora_inicial">Data Inicial:</label>
+        <input type="datetime-local" id="data_hora_inicial" required>
+
         <br><br>
-        <label for="data_final">Data Final:</label>
-        <input type="date" name="data_final" required>
-        <label for="hora_final">Hora Final:</label>
-        <input type="time" name="hora_final" required>
+
+        <label for="data_hora_final">Data Final:</label>
+        <input type="datetime-local" id="data_hora_final" required>
+        
         <br><br>
+
         <input type="submit" value="Calcular">
     </form>
+    
 </body>
 
 </html>
