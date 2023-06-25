@@ -20,7 +20,13 @@
             }
 
             $horaAtual++;
+            
     }
-}
+    $horasDiurnas = gmdate("H:i", $horasDiurnas);
+    $horasNoturnas = gmdate("H:i", $horasNoturnas);
     
+    echo "<h2>Resultados:</h2>";
+    echo "<p>Total de horas diurnas: $horasDiurnas</p>";
+    echo "<p>Total de horas noturnas: $horasNoturnas</p>";
+}    
 ?>
