@@ -38,7 +38,9 @@
 
                 $horaAtual = date("Y-m-d H:i", strtotime($horaAtual . "+1 hour"));
             }
-    
+            echo "<h2>Resultados:</h2>";
+            echo "<p>Total de horas diurnas: $horasDiurnas</p>";
+            echo "<p>Total de horas noturnas: $horasNoturnas</p>";
         }
 
     }
