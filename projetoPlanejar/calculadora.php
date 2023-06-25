@@ -19,6 +19,9 @@
         
         $dataHoraFinal = $dataFinal . " " . $horaFinal;
 
+        $diferencaHoras = strtotime($dataHoraFinal) - strtotime($dataHoraInicial);
+        $horasTrabalhadas = round($diferencaHoras / 3600, 2);
+
     }
 ?>
 </body>
