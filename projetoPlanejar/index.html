@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projetoPlanejar</title>
+</head>
+
+<body>
+    <h1>Cálculo de Horas Diurnas e Noturnas</h1>
+    <h2>Informe a data e a hora trabalhada:</h2>
+
+    <form method="POST" action="<?php echo $_SERVER[" PHP_SELF"]; ?>">
+        <label for="data_inicial">Data Inicial:</label>
+        <input type="date" name="data_inicial" required>
+        <label for="hora_inicial">Hora Inicial:</label>
+        <input type="time" name="hora_inicial" required>
+
+</body>
+
+</html>
